@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vacation Rentals — Sales & Technology Strategy</title>
+    <meta
+      name="description"
+      content="A board-ready dashboard summarizing sales channels, collaboration plans, and the enabling technology stack for a vacation rentals management company."
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <div class="brand">
+          <div class="brand__mark" aria-hidden="true"></div>
+          <div class="brand__text">
+            <div class="brand__title">Vacation Rentals</div>
+            <div class="brand__subtitle">Sales & Technology Strategy</div>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav__link" href="#sales">Sales</a>
+          <a class="nav__link" href="#collaborations">Collaborations</a>
+          <a class="nav__link" href="#technology">Technology</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="container">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <h1 id="hero-title" class="hero__title">Board Dashboard</h1>
+          <p class="hero__subtitle">
+            A crisp overview of the planned sales channels, collaboration approach, and the technology stack required
+            to scale vacation rentals profitably.
+          </p>
+          <div class="hero__meta">
+            <div class="pill">
+              <span class="pill__dot" aria-hidden="true"></span>
+              <span>Draft</span>
+            </div>
+            <div class="meta">
+              <span class="meta__label">Last updated</span>
+              <span class="meta__value" id="last-updated">—</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__cards" role="list" aria-label="Strategic benefits">
+          <article class="kpi" role="listitem">
+            <div class="kpi__label">Demand generation</div>
+            <div class="kpi__value">More qualified demand</div>
+            <div class="kpi__note">Balanced across OTAs, partners, and direct.</div>
+          </article>
+          <article class="kpi" role="listitem">
+            <div class="kpi__label">Conversion & margin</div>
+            <div class="kpi__value">Higher direct share</div>
+            <div class="kpi__note">Better economics with a stronger repeat base.</div>
+          </article>
+          <article class="kpi" role="listitem">
+            <div class="kpi__label">Operational control</div>
+            <div class="kpi__value">Single source of truth</div>
+            <div class="kpi__note">PMS + integrations + analytics for decisions.</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="tabs" aria-label="Strategy sections">
+        <div class="tabs__bar" role="tablist" aria-label="Strategy views">
+          <button class="tab is-active" role="tab" aria-selected="true" aria-controls="tab-sales" id="tab-sales-btn">
+            Sales Strategy
+          </button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="tab-collab" id="tab-collab-btn">
+            Collaborations
+          </button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="tab-tech" id="tab-tech-btn">
+            Technology Stack
+          </button>
+        </div>
+
+        <!-- SALES -->
+        <div class="tabs__panel is-active" role="tabpanel" id="tab-sales" aria-labelledby="tab-sales-btn">
+          <section id="sales" class="section" aria-labelledby="sales-title">
+            <div class="section__head">
+              <h2 id="sales-title" class="section__title">Main Sales Channels</h2>
+              <p class="section__desc">Multi-channel distribution, described simply with clear business purpose.</p>
+            </div>
+
+            <div class="grid grid--2">
+              <article class="card">
+                <div class="card__head">
+                  <h3 class="card__title">OTAs (Online Travel Agencies)</h3>
+                  <div class="tag">Scale</div>
+                </div>
+                <p class="card__text">
+                  <strong>Purpose:</strong> predictable demand at premium intent.<br />
+                  <strong>Description:</strong> distribution via MMT Luxe Selection, Airbnb Luxe, goIbibo, Booking.com.<br />
+                  <strong>Benefit:</strong> faster occupancy ramp and demand resilience.
+                </p>
+              </article>
+
+              <article class="card">
+                <div class="card__head">
+                  <h3 class="card__title">Collaborations (Travel agents, partners & MICE)</h3>
+                  <div class="tag tag--accent">Segments</div>
+                </div>
+                <p class="card__text">
+                  <strong>Purpose:</strong> access qualified networks and group demand.<br />
+                  <strong>Description:</strong> partnerships with travel agents, luxury rental agencies, brands, and MICE companies.<br />
+                  <strong>Benefit:</strong> higher-value bookings and repeatable pipelines.
+                </p>
+              </article>
+
+              <article class="card">
+                <div class="card__head">
+                  <h3 class="card__title">Booking / Reservation Portal</h3>
+                  <div class="tag">Direct</div>
+                </div>
+                <p class="card__text">
+                  <strong>Purpose:</strong> grow direct bookings and protect margins.<br />
+                  <strong>Description:</strong> branded web experience with a fast booking flow and support.<br />
+                  <strong>Benefit:</strong> lower acquisition cost over time and stronger loyalty.
+                </p>
+              </article>
+
+              <article class="card">
+                <div class="card__head">
+                  <h3 class="card__title">Campaigns (Boosting & Ads)</h3>
+                  <div class="tag tag--amber">Demand</div>
+                </div>
+                <p class="card__text">
+                  <strong>Purpose:</strong> generate demand quickly and consistently.<br />
+                  <strong>Description:</strong> ads and boosting on Instagram, YouTube, and Facebook.<br />
+                  <strong>Benefit:</strong> controllable pipeline that can be scaled seasonally.
+                </p>
+              </article>
+            </div>
+
+            <div class="grid grid--1">
+              <article class="card card--wide">
+                <div class="card__head">
+                  <h3 class="card__title">Identify Leads through AI analysis (LinkedIn / Instagram)</h3>
+                  <div class="tag tag--accent">Outbound</div>
+                </div>
+                <p class="card__text">
+                  <strong>Purpose:</strong> create a scalable lead engine beyond inbound demand.<br />
+                  <strong>Description:</strong> AI-supported lead discovery and prioritization from LinkedIn/Instagram signals.<br />
+                  <strong>Benefit:</strong> better prospecting efficiency and improved lead quality.
+                </p>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <!-- COLLAB -->
+        <div class="tabs__panel" role="tabpanel" id="tab-collab" aria-labelledby="tab-collab-btn">
+          <section id="collaborations" class="section" aria-labelledby="collab-title">
+            <div class="section__head">
+              <h2 id="collab-title" class="section__title">Collaborations Being Planned</h2>
+              <p class="section__desc">Clear partner categories with the outcome each collaboration unlocks.</p>
+            </div>
+
+            <div class="grid grid--3">
+              <article class="card">
+                <div class="card__head">
+                  <h3 class="card__title">Travel Agents & Luxury Rental Agencies</h3>
+                  <div class="tag">Distribution</div>
+                </div>
+                <p class="card__text">
+                  <strong>Purpose:</strong> access premium clientele and ready-to-buy demand.<br />
+                  <strong>Planned:</strong> Elite Homes; Homes & Villas by Marriott.
+                </p>
+                <div class="divider"></div>
+                <p class="card__muted"><strong>Benefit:</strong> qualified demand with stronger conversion signals.</p>
+              </article>
+
+              <article class="card">
+                <div class="card__head">
+                  <h3 class="card__title">Vacation Rental Brands (Partial Partnerships)</h3>
+                  <div class="tag tag--accent">Commission</div>
+                </div>
+                <p class="card__text">
+                  <strong>Purpose:</strong> expand reach without building everything from scratch.<br />
+                  <strong>Planned:</strong> Lohono; Amã Stays & Trails; StayVista.
+                </p>
+                <div class="divider"></div>
+                <p class="card__muted">
+                  <strong>Benefit:</strong> incremental bookings via commission-based, selective partnerships.
+                </p>
+              </article>
+
+              <article class="card">
+                <div class="card__head">
+                  <h3 class="card__title">MICE Companies</h3>
+                  <div class="tag tag--amber">Groups</div>
+                </div>
+                <p class="card__text">
+                  <strong>Purpose:</strong> unlock offsites, conferences, and group stays.<br />
+                  <strong>Planned:</strong> SOS Party Offsite; Wizard Events; Thomas Cook; MICEKart.
+                </p>
+                <div class="divider"></div>
+                <p class="card__muted"><strong>Benefit:</strong> high-value group bookings and repeatable corporate demand.</p>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <!-- TECH -->
+        <div class="tabs__panel" role="tabpanel" id="tab-tech" aria-labelledby="tab-tech-btn">
+          <section id="technology" class="section" aria-labelledby="tech-title">
+            <div class="section__head">
+              <h2 id="tech-title" class="section__title">Technology Stack</h2>
+              <p class="section__desc">Core systems that enable scale, accuracy, and measurable performance.</p>
+            </div>
+
+            <div class="stack">
+              <div class="stack__diagram" aria-label="High-level architecture diagram">
+                <div class="node node--guest">
+                  <div class="node__title">Booking / Reservation Portal</div>
+                  <div class="node__meta">Guest-facing</div>
+                </div>
+                <div class="node node--engine">
+                  <div class="node__title">Booking / Reservation Engine</div>
+                  <div class="node__meta">Conversion layer</div>
+                </div>
+                <div class="node node--pms">
+                  <div class="node__title">Property Management System (PMS)</div>
+                  <div class="node__meta">Operations source of truth</div>
+                </div>
+                <div class="node node--cm">
+                  <div class="node__title">Channel Manager</div>
+                  <div class="node__meta">OTA sync</div>
+                </div>
+                <div class="node node--admin">
+                  <div class="node__title">Administration & Analytics Portal</div>
+                  <div class="node__meta">Insights & control</div>
+                </div>
+                <div class="node node--acct">
+                  <div class="node__title">Accounting System (Tally)</div>
+                  <div class="node__meta">Finance integration</div>
+                </div>
+
+                <svg class="wires" viewBox="0 0 1000 520" preserveAspectRatio="none" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="rgba(32,201,151,0.9)" />
+                      <stop offset="100%" stop-color="rgba(80,140,255,0.85)" />
+                    </linearGradient>
+                    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+                      <path d="M0,0 L8,3 L0,6 Z" fill="rgba(171,184,201,0.9)" />
+                    </marker>
+                  </defs>
+                  <!-- Portal -> Engine -> PMS -->
+                  <path d="M180,120 C260,120 280,120 360,120" stroke="url(#g)" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+                  <path d="M520,120 C600,120 620,120 700,120" stroke="url(#g)" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+                  <!-- PMS -> Channel Manager -->
+                  <path d="M820,120 C900,120 910,120 950,120" stroke="url(#g)" stroke-width="3" fill="none" marker-end="url(#arrow)" />
+                  <!-- PMS -> Admin -->
+                  <path d="M760,170 C760,240 620,260 520,280" stroke="rgba(171,184,201,0.85)" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
+                  <!-- PMS -> Tally -->
+                  <path d="M720,170 C720,330 860,340 900,380" stroke="rgba(171,184,201,0.85)" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
+                </svg>
+              </div>
+
+              <div class="stack__notes">
+                <article class="card">
+                  <div class="card__head">
+                    <h3 class="card__title">Core Components</h3>
+                    <div class="tag">Scale-ready</div>
+                  </div>
+                  <ul class="list">
+                    <li><strong>PMS:</strong> operations, inventory, reservations.</li>
+                    <li><strong>Channel Manager:</strong> OTA distribution + rate/availability sync.</li>
+                    <li><strong>Booking/Reservation Engine:</strong> conversion, payment, confirmations.</li>
+                    <li><strong>Admin & analytics portal:</strong> reporting and decision support.</li>
+                    <li><strong>Tally integration:</strong> accounting accuracy and automation.</li>
+                  </ul>
+                  <div class="divider"></div>
+                  <p class="card__muted">
+                    <strong>Benefit:</strong> fewer manual errors, faster operations, and measurable channel performance.
+                  </p>
+                </article>
+
+                <article class="card">
+                  <div class="card__head">
+                    <h3 class="card__title">Pricing & AI Enablement</h3>
+                    <div class="tag tag--accent">Efficiency</div>
+                  </div>
+                  <ul class="list">
+                    <li>
+                      <strong>Dynamic Pricing:</strong> balance price-for-value while protecting profitability.
+                    </li>
+                    <li>
+                      <strong>AI content generation:</strong> faster ad/campaign creatives with consistent brand tone.
+                    </li>
+                    <li>
+                      <strong>AI workflows + human-in-loop:</strong> reliable social posting cadence with approvals.
+                    </li>
+                  </ul>
+                  <div class="divider"></div>
+                  <p class="card__muted"><strong>Benefit:</strong> faster go-to-market with better consistency and control.</p>
+                </article>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__left">Vacation Rentals — Sales & Technology Strategy</div>
+          <div class="footer__right">Designed for board-level clarity • Single-page dashboard</div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./assets/app.js" defer></script>
+  </body>
+</html>
+
