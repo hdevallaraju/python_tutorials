@@ -218,95 +218,112 @@
               <p class="section__desc">Core systems that enable scale, accuracy, and measurable performance.</p>
             </div>
 
-            <div class="stack">
-              <div class="stack__diagram" aria-label="High-level architecture diagram">
-                <div class="node node--guest">
-                  <div class="node__title">Booking / Reservation Portal</div>
-                  <div class="node__meta">Guest-facing</div>
+            <div class="grid grid--2">
+              <article class="card">
+                <div class="card__head">
+                  <h3 class="card__title">Core Components</h3>
+                  <div class="tag">Scale-ready</div>
                 </div>
-                <div class="node node--engine">
-                  <div class="node__title">Booking / Reservation Engine</div>
-                  <div class="node__meta">Conversion layer</div>
-                </div>
-                <div class="node node--pms">
-                  <div class="node__title">Property Management System (PMS)</div>
-                  <div class="node__meta">Operations source of truth</div>
-                </div>
-                <div class="node node--cm">
-                  <div class="node__title">Channel Manager</div>
-                  <div class="node__meta">OTA sync</div>
-                </div>
-                <div class="node node--admin">
-                  <div class="node__title">Administration & Analytics Portal</div>
-                  <div class="node__meta">Insights & control</div>
-                </div>
-                <div class="node node--acct">
-                  <div class="node__title">Accounting System (Tally)</div>
-                  <div class="node__meta">Finance integration</div>
-                </div>
+                <ul class="list">
+                  <li><strong>PMS:</strong> operations, inventory, reservations.</li>
+                  <li><strong>Channel Manager:</strong> OTA distribution + rate/availability sync.</li>
+                  <li><strong>Booking/Reservation Engine:</strong> conversion, payment, confirmations.</li>
+                  <li><strong>Administration & analytics portal:</strong> reporting and decision support.</li>
+                  <li><strong>Tally integration:</strong> accounting accuracy and automation.</li>
+                </ul>
+                <div class="divider"></div>
+                <p class="card__muted">
+                  <strong>Benefit:</strong> fewer manual errors, faster operations, and measurable performance.
+                </p>
+              </article>
 
-                <svg class="wires" viewBox="0 0 1000 520" preserveAspectRatio="none" aria-hidden="true">
+              <article class="card">
+                <div class="card__head">
+                  <h3 class="card__title">Pricing & AI Enablement</h3>
+                  <div class="tag tag--accent">Efficiency</div>
+                </div>
+                <ul class="list">
+                  <li><strong>Dynamic Pricing:</strong> balance price-for-value while protecting profitability.</li>
+                  <li><strong>AI content generation:</strong> faster ad/campaign creatives with consistent brand tone.</li>
+                  <li><strong>AI workflows + human-in-loop:</strong> reliable social posting cadence with approvals.</li>
+                </ul>
+                <div class="divider"></div>
+                <p class="card__muted"><strong>Benefit:</strong> faster go-to-market with better consistency and control.</p>
+              </article>
+            </div>
+
+            <article class="card diagram-card" aria-label="High-level systems diagram">
+              <div class="card__head">
+                <h3 class="card__title">System Flow (High-Level)</h3>
+                <div class="tag">Architecture</div>
+              </div>
+              <p class="card__text">
+                A simple view of how guest booking, operations, distribution, analytics, and accounting connect.
+              </p>
+
+              <div class="diagram" role="img" aria-label="Portal to engine to PMS to channel manager, with PMS feeding analytics and Tally">
+                <svg viewBox="0 0 1200 360" width="100%" height="auto" aria-hidden="true">
                   <defs>
-                    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stop-color="rgba(32,201,151,0.9)" />
-                      <stop offset="100%" stop-color="rgba(80,140,255,0.85)" />
+                    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#20c997" stop-opacity="0.95" />
+                      <stop offset="100%" stop-color="#4f8cff" stop-opacity="0.90" />
                     </linearGradient>
-                    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
-                      <path d="M0,0 L8,3 L0,6 Z" fill="rgba(171,184,201,0.9)" />
+                    <marker id="arr" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+                      <path d="M0,0 L10,6 L0,12 Z" fill="rgba(244,247,251,0.75)" />
                     </marker>
+                    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+                      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000" flood-opacity="0.35" />
+                    </filter>
                   </defs>
-                  <!-- Portal -> Engine -> PMS -->
-                  <path d="M180,120 C260,120 280,120 360,120" stroke="url(#g)" stroke-width="3" fill="none" marker-end="url(#arrow)" />
-                  <path d="M520,120 C600,120 620,120 700,120" stroke="url(#g)" stroke-width="3" fill="none" marker-end="url(#arrow)" />
-                  <!-- PMS -> Channel Manager -->
-                  <path d="M820,120 C900,120 910,120 950,120" stroke="url(#g)" stroke-width="3" fill="none" marker-end="url(#arrow)" />
-                  <!-- PMS -> Admin -->
-                  <path d="M760,170 C760,240 620,260 520,280" stroke="rgba(171,184,201,0.85)" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
-                  <!-- PMS -> Tally -->
-                  <path d="M720,170 C720,330 860,340 900,380" stroke="rgba(171,184,201,0.85)" stroke-width="2.5" fill="none" marker-end="url(#arrow)" />
+
+                  <!-- Cards -->
+                  <g filter="url(#softShadow)">
+                    <!-- top row -->
+                    <rect x="40" y="48" width="240" height="86" rx="14" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)" />
+                    <rect x="340" y="48" width="240" height="86" rx="14" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)" />
+                    <rect x="640" y="48" width="240" height="86" rx="14" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)" />
+                    <rect x="940" y="48" width="220" height="86" rx="14" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)" />
+
+                    <!-- bottom row -->
+                    <rect x="360" y="220" width="320" height="86" rx="14" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)" />
+                    <rect x="740" y="220" width="320" height="86" rx="14" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)" />
+                  </g>
+
+                  <!-- Titles -->
+                  <g font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" fill="rgba(244,247,251,0.96)">
+                    <text x="60" y="82" font-size="16" font-weight="700">Booking / Reservation Portal</text>
+                    <text x="60" y="108" font-size="13" fill="rgba(244,247,251,0.72)">Guest-facing</text>
+
+                    <text x="360" y="82" font-size="16" font-weight="700">Booking / Reservation Engine</text>
+                    <text x="360" y="108" font-size="13" fill="rgba(244,247,251,0.72)">Conversion & payments</text>
+
+                    <text x="660" y="82" font-size="16" font-weight="700">PMS</text>
+                    <text x="660" y="108" font-size="13" fill="rgba(244,247,251,0.72)">Inventory + reservations + ops</text>
+
+                    <text x="960" y="82" font-size="16" font-weight="700">Channel Manager</text>
+                    <text x="960" y="108" font-size="13" fill="rgba(244,247,251,0.72)">OTA sync</text>
+
+                    <text x="380" y="254" font-size="16" font-weight="700">Administration & Analytics Portal</text>
+                    <text x="380" y="280" font-size="13" fill="rgba(244,247,251,0.72)">Reporting, insights, decisions</text>
+
+                    <text x="760" y="254" font-size="16" font-weight="700">Accounting System (Tally)</text>
+                    <text x="760" y="280" font-size="13" fill="rgba(244,247,251,0.72)">Finance integration</text>
+                  </g>
+
+                  <!-- Arrows -->
+                  <g fill="none" stroke-linecap="round">
+                    <path d="M280,91 C305,91 315,91 340,91" stroke="url(#grad)" stroke-width="4" marker-end="url(#arr)" />
+                    <path d="M580,91 C605,91 615,91 640,91" stroke="url(#grad)" stroke-width="4" marker-end="url(#arr)" />
+                    <path d="M880,91 C905,91 915,91 940,91" stroke="url(#grad)" stroke-width="4" marker-end="url(#arr)" />
+
+                    <!-- PMS down to Admin -->
+                    <path d="M760,134 C760,170 640,190 520,220" stroke="rgba(244,247,251,0.55)" stroke-width="3" marker-end="url(#arr)" />
+                    <!-- PMS down to Tally -->
+                    <path d="M800,134 C820,175 910,190 900,220" stroke="rgba(244,247,251,0.55)" stroke-width="3" marker-end="url(#arr)" />
+                  </g>
                 </svg>
               </div>
-
-              <div class="stack__notes">
-                <article class="card">
-                  <div class="card__head">
-                    <h3 class="card__title">Core Components</h3>
-                    <div class="tag">Scale-ready</div>
-                  </div>
-                  <ul class="list">
-                    <li><strong>PMS:</strong> operations, inventory, reservations.</li>
-                    <li><strong>Channel Manager:</strong> OTA distribution + rate/availability sync.</li>
-                    <li><strong>Booking/Reservation Engine:</strong> conversion, payment, confirmations.</li>
-                    <li><strong>Admin & analytics portal:</strong> reporting and decision support.</li>
-                    <li><strong>Tally integration:</strong> accounting accuracy and automation.</li>
-                  </ul>
-                  <div class="divider"></div>
-                  <p class="card__muted">
-                    <strong>Benefit:</strong> fewer manual errors, faster operations, and measurable channel performance.
-                  </p>
-                </article>
-
-                <article class="card">
-                  <div class="card__head">
-                    <h3 class="card__title">Pricing & AI Enablement</h3>
-                    <div class="tag tag--accent">Efficiency</div>
-                  </div>
-                  <ul class="list">
-                    <li>
-                      <strong>Dynamic Pricing:</strong> balance price-for-value while protecting profitability.
-                    </li>
-                    <li>
-                      <strong>AI content generation:</strong> faster ad/campaign creatives with consistent brand tone.
-                    </li>
-                    <li>
-                      <strong>AI workflows + human-in-loop:</strong> reliable social posting cadence with approvals.
-                    </li>
-                  </ul>
-                  <div class="divider"></div>
-                  <p class="card__muted"><strong>Benefit:</strong> faster go-to-market with better consistency and control.</p>
-                </article>
-              </div>
-            </div>
+            </article>
           </section>
         </div>
       </section>
