@@ -81,6 +81,9 @@
           <button class="tab" role="tab" aria-selected="false" aria-controls="tab-tech" id="tab-tech-btn">
             Technology Stack
           </button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="tab-diagram" id="tab-diagram-btn">
+            Systems Diagram
+          </button>
         </div>
 
         <!-- SALES -->
@@ -251,6 +254,16 @@
                 <p class="card__muted"><strong>Benefit:</strong> faster go-to-market with better consistency and control.</p>
               </article>
             </div>
+          </section>
+        </div>
+
+        <!-- DIAGRAM -->
+        <div class="tabs__panel" role="tabpanel" id="tab-diagram" aria-labelledby="tab-diagram-btn">
+          <section class="section" aria-labelledby="diagram-title">
+            <div class="section__head">
+              <h2 id="diagram-title" class="section__title">Systems Diagram</h2>
+              <p class="section__desc">Spacious view designed for board-level walkthroughs.</p>
+            </div>
 
             <article class="card diagram-card" aria-label="High-level systems diagram">
               <div class="card__head">
@@ -258,11 +271,12 @@
                 <div class="tag">Architecture</div>
               </div>
               <p class="card__text">
-                A simple view of how guest booking, operations, distribution, analytics, and accounting connect.
+                Booking portal connects to the booking engine and PMS. PMS syncs to OTAs via channel manager and feeds
+                analytics and accounting (Tally).
               </p>
 
-              <div class="diagram" role="img" aria-label="Portal to engine to PMS to channel manager, with PMS feeding analytics and Tally">
-                <svg viewBox="0 0 1200 360" width="100%" height="auto" aria-hidden="true">
+              <div class="diagram diagram--wide" role="img" aria-label="Portal to engine to PMS to channel manager, with PMS feeding analytics and Tally">
+                <svg viewBox="0 0 1200 360" aria-hidden="true">
                   <defs>
                     <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
                       <stop offset="0%" stop-color="#20c997" stop-opacity="0.95" />
